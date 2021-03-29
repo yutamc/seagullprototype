@@ -1,0 +1,71 @@
+.hero-text > h1{
+    font-size: 160px;
+    
+}
+
+home-container{
+    background-color: #FFFBFA;
+}
+
+.hero-text > h3{
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.hero-text-two{
+    text-align: right;
+    margin-left: auto;
+}
+
+.row-container{
+    display: flex;
+}
+
+.hero-container{
+    background: linear-gradient(#54defd,#FFFBFA)
+}
+
+.three-col{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.features{
+    background-color: #FFFBFA;
+}
+
+.col > h4{
+    font-weight: 800;
+}
+
+.col > p{
+    padding: 10px;
+}
+
+.col{
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.login-buttons{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFBFA;
+}
+
+.button{
+    padding: 10px;
+}
+
+@media (max-width: 767px){
+    .col{
+        height: fit-content;
+        margin-top: 20px;
+    }
+}
+

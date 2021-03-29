@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+.button-primary{
+    background-color: transparent;
+    border-radius: 5px;
+    color: #49C6E5;
+    border: 2px solid #49C6E5;
+    padding: 10px 20px 10px 20px;
+    margin-left: auto;
+}
+
+.button-primary:hover{
+    background-color: #49C6E5;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.button-secondary{
+    background-color: transparent;
+    border-radius: 5px;
+    color: #8BD7D2;
+    border: 2px solid #8bd7d2;
+    padding: 10px 20px 10px 20px;
+    margin-left: auto;
+}
+
+.button-secondary:hover{
+    background-color: #8bd7d2;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.sign-up{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up > button{
+    margin: auto;
+    margin-top: 10px;
+}
+
+p.px-2{
+    color: gray;
+}
+
+@media(max-width: 991px){
+    .button-primary, .button-secondary{width: 140px;}
+
+}

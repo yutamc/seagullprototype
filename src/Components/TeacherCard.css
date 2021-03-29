@@ -1,0 +1,34 @@
+.teacher-card{
+    width: 60%;
+    margin: auto;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lower-lower{
+    display: flex;
+    justify-content: space-around;
+}
+
+.quote-container{
+    width: 100%;
+}
+
+.teacher-image{
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.like-button{
+    cursor: pointer;
+}
+
+.like-button:hover{
+    transform: scale(1.05);
+    color:  #49C6E5;
+    transition: all 0.3s;
+}
+

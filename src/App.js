@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './Components/Navbar';
+import './style.css'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Home from './Pages/Home';
+import TeacherSearch from './Pages/TeacherSearch';
+import React from 'react'
+import TeacherSign from './Pages/TeacherSign'
 function App() {
+
+  
+    
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      
+      <div className="app">
+        
+        <Navbar />
+        <Switch>
+          <Route path='/signasteacher'>
+            <TeacherSign />
+          </Route>
+          <Route path='/teachers'>
+            <TeacherSearch />
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+          
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
